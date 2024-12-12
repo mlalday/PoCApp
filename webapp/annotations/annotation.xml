@@ -1,0 +1,83 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/TripPinRESTierService/(S(mrne4bobk2ugrb0asbwilyg0))/$metadata">
+        <edmx:Include Namespace="Trippin"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
+            <Annotations Target="Trippin.Person">
+                <Annotation Term="UI.FieldGroup" Qualifier="GeneratedGroup">
+                    <Record Type="UI.FieldGroupType">
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="UserName"/>
+                                    <PropertyValue Property="Value" Path="UserName"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="FirstName"/>
+                                    <PropertyValue Property="Value" Path="FirstName"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="LastName"/>
+                                    <PropertyValue Property="Value" Path="LastName"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="MiddleName"/>
+                                    <PropertyValue Property="Value" Path="MiddleName"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="Gender"/>
+                                    <PropertyValue Property="Value" Path="Gender"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="Age"/>
+                                    <PropertyValue Property="Value" Path="Age"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="FavoriteFeature"/>
+                                    <PropertyValue Property="Value" Path="FavoriteFeature"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.Facets">
+                    <Collection>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="ID" String="GeneratedFacet1"/>
+                            <PropertyValue Property="Label" String="General Information"/>
+                            <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#GeneratedGroup"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="UserName"/>
+                            <PropertyValue Property="Value" Path="UserName"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="FirstName"/>
+                            <PropertyValue Property="Value" Path="FirstName"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="LastName"/>
+                            <PropertyValue Property="Value" Path="LastName"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="MiddleName"/>
+                            <PropertyValue Property="Value" Path="MiddleName"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Gender"/>
+                            <PropertyValue Property="Value" Path="Gender"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
