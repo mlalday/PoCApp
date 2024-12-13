@@ -41,4 +41,4 @@ Demo Fiori App
 
 1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
 
-Test new repo 3
+Test Application change to confirm sync
