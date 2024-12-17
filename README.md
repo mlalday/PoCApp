@@ -21,7 +21,7 @@
 
 ## demoapp
 
-Demo Fiori App
+Demonstration of Commit with BAS x Github
 
 ### Starting the generated app
 
